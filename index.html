@@ -2,10 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS let var const Examples</title>
+    <script src="./script.js"></script>
 </head>
 <body>
-  <script src="./script.js"></script>
+
+<h1>Example or Exercise:</h1>
+
+<div>
+<h3>Example 1 :</h3>
+<p>console.log(nm);</p>
+<p>let nm = "name";</p>
+<p>Answer or Error: ReferenceError</p>
+<p>Why: let variable declaration se pehle access nahi hota (TDZ).</p>
+</div>
+
+<div>
+<h3>Example 2 :</h3>
+<p>console.log(b);</p>
+<p>var b = "username";</p>
+<p>Answer or Error: undefined</p>
+<p>Why: var hoisting hota hai, default value undefined hoti hai.</p>
+</div>
+
+<div>
+<h3>Example 3 :</h3>
+<p>var x = 1;</p>
+<p>{ var x = 2; }</p>
+<p>console.log(x);</p>
+<p>Answer or Error: 2</p>
+<p>Why: var block scoped nahi hota.</p>
+</div>
+
+<div>
+<h3>Example 4 :</h3>
+<p>let a = 10;</p>
+<p>{
+    let a = 20;
+    console.log("Inside:", a);
+}</p>
+<p>console.log("Outside:", a);</p>
+<p>Answer or Error: Inside 20, Outside 10</p>
+<p>Why: let block scoped hota hai.</p>
+</div>
+
+<div>
+<h3>Example 5 :</h3>
+<p>const person = {name: "demo"};</p>
+<p>person.name = "user"; ✅</p>
+<p>person = {}; ❌</p>
+<p>Answer or Error: Property change allowed, reassignment not allowed</p>
+<p>Why: const reference fix hota hai, object ke properties change ho sakte hain.</p>
+</div>
+
 </body>
 </html>
