@@ -48,3 +48,10 @@ console.log("Functional scope "+ ef);
 }
 abcd();
 console.log(ef);
+//temporal dead zone(tdz)
+//tdz not working on var
+console.log(temp_b);
+var temp_b =23;//on var there is no tdz
+//console log
+console.log(j)
+let j=12;
