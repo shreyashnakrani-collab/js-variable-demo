@@ -50,4 +50,29 @@ on console.log
 <p>Answer or Error: </p>
 <p>Why : </p>
 </div>
+ <br>
+<hr>
+<br>
+<h3>Example 1 :</h3>
+<p>true + false </p>
+</div>
  
+<div>
+<h3>Example 2 :</h3>
+<p>null + 1 </p>
+</div>
+ 
+<div>
+<h3>Example 3 :</h3>
+<p>"12" + 12 </p>
+</div>
+ 
+<div>
+<h3>Example 4 :</h3>
+<p>!! undefined</p>
+</div>
+ 
+<div>
+<h3>Example 5 :</h3>
+<p>"12" - 1 </p>
+</div>

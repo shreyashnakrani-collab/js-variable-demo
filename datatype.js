@@ -41,5 +41,22 @@ let profile =[{name: "Bob", age: 30, phone_num: 9876543210},
    let u_name = "John";
    u_name = 100;
    u_name=[];
-   
+   //typeof quirks
+   //typeof 12
+   // check type of variable use ---> ex. typeof nan, typeof null,1 + "1",1=="1",1 ==="1"
+   //why typof Nan---> number
+   //NaN is a failed number opration that why its type is number
+   //ex. "hello"- 5 --> NaN
+   //why typeof null ---> object
+   //bug in js but we cant change it because of backward compatibility
+   //1 + "1" --> "11" (string concatenation)
+   //1 == "1" --> true (loose equality, type coercion)
+   //1 === "1" --> false (strict equality, no type coercion)
+   //truthy and falsy values
+   //0, false, "", null, undefined, NaN --> falsy
+   //ex. !!0 -- check value is truthy or falsy
+   //ex. if(null){} --> false
+   //everything else is truthy
+   //ex. !!"hello" --> true
+   //ex. if("world"){} --> true
 

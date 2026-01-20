@@ -55,6 +55,43 @@
 <p>Answer or Error: Property change allowed, reassignment not allowed</p>
 <p>Why: const reference fix hota hai, object ke properties change ho sakte hain.</p>
 </div>
-
+<table>
+    <tr>
+        <th>Example</th>
+        <th>Expression</th>
+        <th>Explanation</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>true + false</td>
+        <td>true → 1, false → 0, 1 + 0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>null + 1</td>
+        <td>null → 0, 0 + 1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>"12" + 12</td>
+        <td>String concatenation: "12" + "12"</td>
+        <td>"1212"</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>!!undefined</td>
+        <td>undefined → falsy, !undefined → true, !!undefined → false</td>
+        <td>false</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>"12" - 1</td>
+        <td>Numeric subtraction: 12 - 1</td>
+        <td>11</td>
+    </tr>
+</table>
 </body>
 </html>
