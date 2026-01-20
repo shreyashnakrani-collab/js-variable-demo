@@ -27,3 +27,19 @@ console.log(y); // null
 let n1 = 100n;
 let n2 = n1 + 10n;
 console.log(n2); // 110n
+
+//<------non-primitive data types------>
+//tpes: array, object, function
+let temp_arr = [10, 20, 30];
+let temp_obj = {name: "Alice", age: 25, phone_num: 1234567890};
+let profile =[{name: "Bob", age: 30, phone_num: 9876543210},
+     {name: "Charlie", age: 35, phone_num: 1234567890},
+     {name: "David", age: 40, phone_num: 9876543210}
+    ];
+    function name(param){}
+    // dynamic typing
+   let u_name = "John";
+   u_name = 100;
+   u_name=[];
+   
+
