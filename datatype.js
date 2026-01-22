@@ -59,4 +59,4 @@ let profile =[{name: "Bob", age: 30, phone_num: 9876543210},
    //everything else is truthy
    //ex. !!"hello" --> true
    //ex. if("world"){} --> true
-
+   

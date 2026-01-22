@@ -2,96 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS let var const Examples</title>
-    <script src="./datatype.js"></script>
-     <script src="./variable.js"></script>
+ <title>JS let var const Examples</title>
+  <!--<script src="./datatype.js"></script> -->
+  <!-- <script src="./variable.js"></script> -->
+  <!-- <script src="./operator.js"></script>-->
+ <!--<script src="./controlflow.js"></script>-->
+<script src="./loops.js"></script>
 </head>
 <body>
 
-<h1>Example or Exercise:</h1>
 
-<div>
-<h3>Example 1 :</h3>
-<p>console.log(nm);</p>
-<p>let nm = "name";</p>
-<p>Answer or Error: ReferenceError</p>
-<p>Why: let variable declaration se pehle access nahi hota (TDZ).</p>
-</div>
 
-<div>
-<h3>Example 2 :</h3>
-<p>console.log(b);</p>
-<p>var b = "username";</p>
-<p>Answer or Error: undefined</p>
-<p>Why: var hoisting hota hai, default value undefined hoti hai.</p>
-</div>
-
-<div>
-<h3>Example 3 :</h3>
-<p>var x = 1;</p>
-<p>{ var x = 2; }</p>
-<p>console.log(x);</p>
-<p>Answer or Error: 2</p>
-<p>Why: var block scoped nahi hota.</p>
-</div>
-
-<div>
-<h3>Example 4 :</h3>
-<p>let a = 10;</p>
-<p>{
-    let a = 20;
-    console.log("Inside:", a);
-}</p>
-<p>console.log("Outside:", a);</p>
-<p>Answer or Error: Inside 20, Outside 10</p>
-<p>Why: let block scoped hota hai.</p>
-</div>
-
-<div>
-<h3>Example 5 :</h3>
-<p>const person = {name: "demo"};</p>
-<p>person.name = "user"; ✅</p>
-<p>person = {}; ❌</p>
-<p>Answer or Error: Property change allowed, reassignment not allowed</p>
-<p>Why: const reference fix hota hai, object ke properties change ho sakte hain.</p>
-</div>
-<table>
-    <tr>
-        <th>Example</th>
-        <th>Expression</th>
-        <th>Explanation</th>
-        <th>Result</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>true + false</td>
-        <td>true → 1, false → 0, 1 + 0</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>null + 1</td>
-        <td>null → 0, 0 + 1</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>"12" + 12</td>
-        <td>String concatenation: "12" + "12"</td>
-        <td>"1212"</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>!!undefined</td>
-        <td>undefined → falsy, !undefined → true, !!undefined → false</td>
-        <td>false</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>"12" - 1</td>
-        <td>Numeric subtraction: 12 - 1</td>
-        <td>11</td>
-    </tr>
-</table>
 </body>
 </html>
