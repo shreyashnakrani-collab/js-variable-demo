@@ -67,3 +67,31 @@ for(let j=10;j>=1;j--){
 for(let jk=1;jk<=20;jk++){
   console.log("Hello World"+jk);
 }
+
+// breack 
+for(let k=1; k<=201; k++){
+    console.log("breck ",k);
+    if(k<24){
+        break;
+    }
+}
+for(let ku=1; k<=291; ku++){
+    console.log("breck 2",ku);
+    if(ku<24){
+        break;
+    }
+}
+//continue
+for(let A=1;A<=10; A++){
+    if(A>=5){
+        continue;
+    }
+    console.log("loop that skip number ",A);
+}
+for(let a=1;a<=100; a++){
+    if(a>=5){
+        continue;
+    }
+    console.log("loop ",a);
+}
+
