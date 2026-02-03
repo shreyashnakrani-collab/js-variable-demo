@@ -344,11 +344,105 @@ function f(){
 
 console.log(f()); // undefined
 
+console.clear();
 
-    
+//11
+let x = function(){ 
+    console.log("11 → Hi"); 
+};
+x();
 
+//12
+let a = function(){
+    console.log("12 → Hello");
+};
+a();
 
+//13
+function abcd(val1){
+    val1();
+}
+abcd(function(){
+    console.log("13 → Hello from callback");
+});
 
+//14
+function hof(fn){
+    fn();
+}
+hof(function(){
+    console.log("14 → Higher Order Function");
+});
 
+//16 Impure
+let total = 5;
+function nu(num){
+    total += num;
+}
+nu(3);
+console.log("16 → total =", total);
 
-    
+//17 Pure
+function numpq(total, num){
+    return total + num;
+}
+let result = numpq(5, 3);
+console.log("17 → result =", result);
+
+//18 Closure
+function outer1(){   
+    let a1 = 10;
+    return function(){
+        console.log("18 → closure value =", a1);
+    }
+}
+let Y = outer1();
+Y();
+
+//19 Closure counter
+function outer2(){
+    let count = 0;
+    return function(){
+        count++;
+        console.log("19 → count =", count);
+    };
+}
+const counter1 = outer2();
+counter1();
+counter1();
+
+//20 IIFE
+(function(){
+    console.log("20 → Initialized");
+})();
+
+//21 IIFE private variable
+let fun = (function(){
+    let score = 0;
+    return {
+        getScore(){
+            console.log("21 → score =", score);
+        },
+        setScore(val){
+            score = val;
+        }
+    }
+})();
+fun.setScore(10);
+fun.getScore();
+
+//22 Hoisting error example
+try {
+    temp_var1();
+} catch (e) {
+    console.log("22 → Error:", e.message);
+}
+var temp_var1 = function(){
+    console.log("Hello");
+};
+
+//23 Hoisting works
+temp_var2();
+function temp_var2(){
+    console.log("23 → Hello");
+}
