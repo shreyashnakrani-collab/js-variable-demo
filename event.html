@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Events Example</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .ll{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            background-color: azure;
+            border: 2px solid black;
+            margin: 30px auto;
+            cursor: pointer;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .gg{
+            height: 40px;
+            width: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .mm{
+            border: 2px solid purple;
+            border-radius: 20px;
+            width: 95%;
+            height: 2000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .sel{
+            height: 50px;
+            width: 350px;
+        }
+
+        .outer{
+            width:300px;
+            height:200px;
+            border:3px solid red;
+            margin:20px auto;
+            padding:20px;
+        }
+
+        .inner{
+            width:200px;
+            height:120px;
+            border:3px solid green;
+            margin:auto;
+            padding:20px;
+        }
+
+        .most_inner{
+            width:120px;
+            height:70px;
+            border:3px solid blue;
+            margin:auto;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body class="mm">
+
+    <h2>JavaScript Events Example</h2>
+
+    <!-- Dark Light Mode -->
+    <button onclick="darkMode()">Dark Mode</button>
+    <button onclick="lightMode()">Light Mode</button>
+
+    <!-- Div box -->
+    <div class="ll" id="box" onclick="singleClick1()" ondblclick="doubleClick2()"></div>
+
+    <br>
+
+    <!-- Button -->
+    <button class="gg" id="btn" onclick="h()" ondblclick="j()">Click to show</button>
+<br><br>
+
+    <!--drop down-->
+<select class="sel" onchange="showDevice()" >
+    <option>Select your Device</option>
+    <option value="phone">Phone</option>
+    <option value="laptop">Laptop</option>
+    <option value="watch">Watch</option>
+    <option value="tablet">Tablet</option>
+</select>
+
+<p id="result"></p>
+<h2>Choose Background Color</h2>
+
+<br><br>
+
+<div id="newbox" style="
+width:300px;
+height:250px;
+border:5px solid black;
+border-radius:15px;
+margin:auto;">
+</div><br>
+
+Select me:-<br><br>
+<input type="color" id="bgcolor" onchange="changeBg()">
+<input type="color" id="bordercolor" onchange="changeBorder()">
+<br><br>
+Submit to color Red Show:-<br><br>
+<form action="">
+    <input type="text" value="text">
+    <input type="submit" value="submit">
+</form><br><br>
+<h3><b>Box Show inner to Color red and outer color blue:-</b></h3><br><br>
+<div class="box2"></div>
+<br><br>
+
+<!-- Event bubbling boxes -->
+<div class="outer">
+    <div class="inner">
+        <div class="most_inner">
+            <button>Click</button>
+        </div>
+    </div>
+</div>
+
+<!-- to Do -->
+<h1>Shopping list</h1>
+<ul>
+    <li>laptop i7 13th gen</li><br>
+    <li>harddisk 1TB SSD</li><br>
+    <li>Power cable</li><br>
+    <li>Rgb Keyboard</li><br>
+    <li>Track Pad</li>
+</ul>
+
+<!--Text Counter-->
+<h1>text counter </h1>
+<input type="text" id="counter"/>
+<h1>text count :0</h1>
+
+<!-- JS file LAST me rakho (important) -->
+<script src="event.js"></script>
+
+</body>
+</html>
